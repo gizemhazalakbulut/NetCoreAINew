@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreAINew.Project01_DeepGramAIVoice", "NetCoreAINew.Project01_DeepGramAIVoice\NetCoreAINew.Project01_DeepGramAIVoice.csproj", "{17D702AC-8AC0-469A-88E4-C18C4E389DEF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreAINew.Project02_HuggingFaceSentimentAnalysis", "NetCoreAINew.Project02_HuggingFaceSentimentAnalysis\NetCoreAINew.Project02_HuggingFaceSentimentAnalysis.csproj", "{ACD9089B-92D8-4B76-ADAC-CD978F53414B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreAINew.Project03_HuggingFaceSummarizeText", "NetCoreAINew.Project03_HuggingFaceSummarizeText\NetCoreAINew.Project03_HuggingFaceSummarizeText.csproj", "{E5BDB683-0B76-4BCE-8FBE-6E95BCF29F5B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +23,15 @@ Global
 		{ACD9089B-92D8-4B76-ADAC-CD978F53414B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACD9089B-92D8-4B76-ADAC-CD978F53414B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACD9089B-92D8-4B76-ADAC-CD978F53414B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5BDB683-0B76-4BCE-8FBE-6E95BCF29F5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5BDB683-0B76-4BCE-8FBE-6E95BCF29F5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5BDB683-0B76-4BCE-8FBE-6E95BCF29F5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5BDB683-0B76-4BCE-8FBE-6E95BCF29F5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {20713BB3-BD31-4A50-B2CC-DBE80B6E6A0C}
 	EndGlobalSection
 EndGlobal
