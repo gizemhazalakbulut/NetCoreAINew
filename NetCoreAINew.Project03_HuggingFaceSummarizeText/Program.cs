@@ -18,7 +18,7 @@ var content = new StringContent(json, Encoding.UTF8, "application/json"); // JSO
 using var client = new HttpClient();
 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", apiKey);
 
-//var response = await client.PostAsync("https://api-inference.huggingface.co/models/facebook/bart-large-cnn", content);
+
 var response = await client.PostAsync("https://api-inference.huggingface.co/models/sshleifer/distilbart-cnn-12-6", content);
 var responseContent = await response.Content.ReadAsStringAsync();
 

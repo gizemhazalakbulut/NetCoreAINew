@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreAINew.Project02_Hugg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreAINew.Project03_HuggingFaceSummarizeText", "NetCoreAINew.Project03_HuggingFaceSummarizeText\NetCoreAINew.Project03_HuggingFaceSummarizeText.csproj", "{E5BDB683-0B76-4BCE-8FBE-6E95BCF29F5B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreAINew.Project04_HuggingFaceNamedEntityRecognition", "NetCoreAINew.Project04_HuggingFaceNamedEntityRecognition\NetCoreAINew.Project04_HuggingFaceNamedEntityRecognition.csproj", "{1639FF45-5A6E-4007-BA6A-77539E3AB7C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreAINew.Project05_HuggingFaceRobertaBaseQA", "NetCoreAINew.Project05_HuggingFaceRobertaBaseQA\NetCoreAINew.Project05_HuggingFaceRobertaBaseQA.csproj", "{CAB6DE40-DE2A-4243-9AD9-566FD3FAB1F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreAINew.Project06_HuggingFaceToxicBert", "NetCoreAINew.Project06_HuggingFaceToxicBert\NetCoreAINew.Project06_HuggingFaceToxicBert.csproj", "{4C38CB0A-D7A1-4EBE-9C58-9B74C64A7C68}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +33,18 @@ Global
 		{E5BDB683-0B76-4BCE-8FBE-6E95BCF29F5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5BDB683-0B76-4BCE-8FBE-6E95BCF29F5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5BDB683-0B76-4BCE-8FBE-6E95BCF29F5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1639FF45-5A6E-4007-BA6A-77539E3AB7C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1639FF45-5A6E-4007-BA6A-77539E3AB7C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1639FF45-5A6E-4007-BA6A-77539E3AB7C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1639FF45-5A6E-4007-BA6A-77539E3AB7C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAB6DE40-DE2A-4243-9AD9-566FD3FAB1F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAB6DE40-DE2A-4243-9AD9-566FD3FAB1F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAB6DE40-DE2A-4243-9AD9-566FD3FAB1F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAB6DE40-DE2A-4243-9AD9-566FD3FAB1F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C38CB0A-D7A1-4EBE-9C58-9B74C64A7C68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C38CB0A-D7A1-4EBE-9C58-9B74C64A7C68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C38CB0A-D7A1-4EBE-9C58-9B74C64A7C68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C38CB0A-D7A1-4EBE-9C58-9B74C64A7C68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
