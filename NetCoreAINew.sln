@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreAINew.Project16_Goog
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreAINew.Project17_OpenAICodeEditor", "NetCoreAINew.Project17_OpenAICodeEditor\NetCoreAINew.Project17_OpenAICodeEditor.csproj", "{99DC8845-DB45-4367-8E48-9D6044D27F90}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreAINew.Project18_StabilityAIStableDiffusion", "NetCoreAINew.Project18_StabilityAIStableDiffusion\NetCoreAINew.Project18_StabilityAIStableDiffusion.csproj", "{7C93D4BF-7540-4C28-92C3-ECFC6BB6BA99}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{99DC8845-DB45-4367-8E48-9D6044D27F90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99DC8845-DB45-4367-8E48-9D6044D27F90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99DC8845-DB45-4367-8E48-9D6044D27F90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C93D4BF-7540-4C28-92C3-ECFC6BB6BA99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C93D4BF-7540-4C28-92C3-ECFC6BB6BA99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C93D4BF-7540-4C28-92C3-ECFC6BB6BA99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C93D4BF-7540-4C28-92C3-ECFC6BB6BA99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
