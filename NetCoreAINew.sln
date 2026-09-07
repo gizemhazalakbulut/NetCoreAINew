@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreAINew.Project17_Open
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreAINew.Project18_StabilityAIStableDiffusion", "NetCoreAINew.Project18_StabilityAIStableDiffusion\NetCoreAINew.Project18_StabilityAIStableDiffusion.csproj", "{7C93D4BF-7540-4C28-92C3-ECFC6BB6BA99}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreAINew.Project19_ReplicateAICreateVideoFromPrompt", "NetCoreAINew.Project19_ReplicateAICreateVideoFromPrompt\NetCoreAINew.Project19_ReplicateAICreateVideoFromPrompt.csproj", "{17214193-D649-4A09-AE8A-635B4E2AFE9B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{7C93D4BF-7540-4C28-92C3-ECFC6BB6BA99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C93D4BF-7540-4C28-92C3-ECFC6BB6BA99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C93D4BF-7540-4C28-92C3-ECFC6BB6BA99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17214193-D649-4A09-AE8A-635B4E2AFE9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17214193-D649-4A09-AE8A-635B4E2AFE9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17214193-D649-4A09-AE8A-635B4E2AFE9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17214193-D649-4A09-AE8A-635B4E2AFE9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
