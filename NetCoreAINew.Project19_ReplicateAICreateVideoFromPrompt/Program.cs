@@ -19,19 +19,19 @@ class Program
         using var client = new HttpClient();
         client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Token", apiKey);
 
-        // Bölüm 1-Üretim İsteği
-        var body = new
+        // Bölüm 1-Üretim İsteği 
+        var body = new 
         {
-            version,
-            input = new
+            version, // Model sürümü
+            input = new // Girdi parametreleri
             {
-                prompt,
-                num_frames = 24,
-                fps = 8,
-                guidance_scale = 12.5,
-                num_inference_steps = 50,
-                width = 576,
-                height = 320
+                prompt, // Kullanıcıdan alınan metin girdisi
+                num_frames = 24, // Video uzunluğu (saniye cinsinden)
+                fps = 8, // Video kare hızı
+                guidance_scale = 12.5, // Yaratıcılık seviyesi
+                num_inference_steps = 50, // Modelin üretim adım sayısı
+                width = 576, // Video genişliği (piksel)
+                height = 320 // Video yüksekliği (piksel)
             }
         };
 
@@ -44,44 +44,44 @@ class Program
         }
 
         var pred = JsonDocument.Parse(await response.Content.ReadAsStringAsync());
-        string id = pred.RootElement.GetProperty("id").GetString();
+        string id = pred.RootElement.GetProperty("id").GetString(); // Üretim isteği ID'si
         Console.WriteLine("🎨 Video üretiliyor...");
 
         //Bölüm 2 Durum Sorgulama Döngüsü
         string status = "";
         string videoUrl = "";
-        while (status != "succeeded")
+        while (status != "succeeded") // Üretim tamamlanana kadar döngü
         {
-            await Task.Delay(5000);
-            var chk = await client.GetAsync($"https://api.replicate.com/v1/predictions/{id}");
-            var chkJson = JsonDocument.Parse(await chk.Content.ReadAsStringAsync());
-            status = chkJson.RootElement.GetProperty("status").GetString();
-            Console.WriteLine($"⌛ Durum: {status}");
-            if (status == "failed")
+            await Task.Delay(5000); // 5 saniye bekle
+            var chk = await client.GetAsync($"https://api.replicate.com/v1/predictions/{id}"); // Üretim durumunu sorgula
+            var chkJson = JsonDocument.Parse(await chk.Content.ReadAsStringAsync()); // JSON yanıtını ayrıştır
+            status = chkJson.RootElement.GetProperty("status").GetString(); // Üretim durumunu al
+            Console.WriteLine($"⌛ Durum: {status}"); // Durumu konsola yazdır
+            if (status == "failed") // Üretim başarısız olduysa döngüden çık
             {
                 Console.WriteLine("Üretim başarısız oldu");
                 return;
             }
-            if (status == "succeeded")
+            if (status == "succeeded") // Üretim başarılı olduysa video URL'sini al
             {
-                var output = chkJson.RootElement.GetProperty("output");
-                videoUrl = output.ValueKind == JsonValueKind.Array ? output[0].GetString() : output.GetString();
+                var output = chkJson.RootElement.GetProperty("output"); // Üretim çıktısını al
+                videoUrl = output.ValueKind == JsonValueKind.Array ? output[0].GetString() : output.GetString(); // Video URL'sini al
             }
         }
 
         Console.WriteLine($"💎 Video hazır: {videoUrl}");
 
         //Bölüm 3 İndirme
-        using var stream = await client.GetStreamAsync(videoUrl);
-        await using var file = File.Create("generated_video.mp4");
-        await stream.CopyToAsync(file);
+        using var stream = await client.GetStreamAsync(videoUrl); // Video akışını al
+        await using var file = File.Create("generated_video.mp4"); // Video dosyasını oluştur
+        await stream.CopyToAsync(file); // Video akışını dosyaya yaz
         Console.WriteLine("🎉 Video indirildi -> generated_video.mp4");
 
         //Bölüm 4 otomatik aç
-        Process.Start(new ProcessStartInfo
+        Process.Start(new ProcessStartInfo // Video dosyasını varsayılan oynatıcı ile aç
         {
-            FileName = "generated_video.mp4",
-            UseShellExecute = true
+            FileName = "generated_video.mp4", // Açılacak dosya adı
+            UseShellExecute = true           // Varsayılan uygulama ile aç
         });
 
 

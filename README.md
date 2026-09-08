@@ -4,7 +4,6 @@
 
 > **AI Masterclass: C# ile 20 Yapay Zeka Entegrasyonu (Part 2)** Udemy kursu kapsamında geliştirilmiştir.
 > 👨‍🏫 Eğitmen: **Murat Yücedağ** — M&Y Yazılım Eğitim Akademi Danışmanlık
-> 👩‍💻 Geliştiren: **Gizem Hazal Akbulut** 🎓
 
 ---
 
@@ -85,39 +84,6 @@
   - `PdfPig` — PDF metin çıkarımı (Proje 08)
   - `NAudio` — Mikrofon ses kaydı (Proje 20)
   - `System.Speech` — Metinden sese, TTS (Proje 20)
-
----
-
-## 🚀 Kurulum ve Çalıştırma
-
-### Gereksinimler
-- [.NET SDK](https://dotnet.microsoft.com/download)
-- İlgili servislere ait **API anahtarları** (OpenAI, Anthropic, Google Gemini, Hugging Face, Azure, Replicate, Stability AI, DeepGram)
-
-### Adımlar
-
-```bash
-# Depoyu klonla
-git clone <repo-adresi>
-cd NetCoreAINew
-
-# Çalıştırmak istediğin projeye gir
-cd NetCoreAINew.Project02_HuggingFaceSentimentAnalysis
-
-# Bağımlılıkları yükle ve çalıştır
-dotnet restore
-dotnet run
-```
-
-> Tüm solution'ı Visual Studio'da `NetCoreAINew.sln` dosyasıyla açıp istediğin projeyi **başlangıç projesi** olarak ayarlayarak da çalıştırabilirsin.
-
----
-
-## 🔑 API Anahtarları Hakkında
-
-Her proje, ilgili servisin API anahtarını `Program.cs` içinde bir `apiKey` değişkeninde bekler. Çalıştırmadan önce kendi anahtarını girmen gerekir.
-
-> ⚠️ **Güvenlik Uyarısı:** API anahtarlarını kaynak koda yazıp **herkese açık bir repoya göndermeyin.** Gerçek projelerde anahtarları ortam değişkenleri (environment variables), `appsettings.json` veya `dotnet user-secrets` ile saklamanız önerilir. Sızan anahtarları derhal iptal edin.
 
 ---
 
